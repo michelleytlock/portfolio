@@ -7,17 +7,15 @@ import "../styles/index.scss"
 import "../styles/home.css"
 
 class Index extends Component {
-  state = {
-    done: undefined,
-  }
 
   componentDidMount() {
     const options = {
-      strings: ["Hi, I'm Michelle, UX Designer and Full-Stack Developer"],
+      strings: ["Hi, I'm Michelle,<br />nice to meet you!"],
       typeSpeed: 50,
       onComplete: () => {
-        console.log("done")
-        navigate("/home")
+        setTimeout(() => {
+          navigate("/home")
+        }, 1000)
       },
     }
 
@@ -27,7 +25,7 @@ class Index extends Component {
   render() {
     return (
       <>
-        <section className="hero is primary is-fullheight">
+        <section className="hero is primary is-fullheight typed-background">
           <div className="hero-body">
             <div className="container">
               <div className="wrap">
