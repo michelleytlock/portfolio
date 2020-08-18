@@ -225,7 +225,7 @@ class Home extends Component {
                 data-sal-delay="100"
                 data-sal-easing="ease-out-bounce"
               >
-                <img src={mediaBoxPhoto} alt="MediaBox Project" />
+                <img src="https://res.cloudinary.com/michelleytlock/image/upload/v1597663107/Frame_1_rxpxen.png" alt="MediaBox Project" />
                 <h3 className="h3">Verbadisco</h3>
                 <h5 className="h5">
                   A mobile application for the ultimate Harry Potter fan.

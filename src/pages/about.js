@@ -122,14 +122,47 @@ const About = () => {
             I currently live in Hong Kong. Other cities I've lived in are
             Shanghai 🥟 , Miami 🌴, and New York 🗽.
           </p>
-          <p className="p">I grew up as a TCK (third culture kid born in Hong Kong 🇭🇰 , raised in Shanghai 🇨🇳 , attended American international school 🇺🇸 ). I was lucky enough to experience many different cultures. </p>
-          <p className="p">As a result, I love to travel. I have been to 18 countries, and I'm always on Google Flights looking for cheap airfare! (obviously all my travel plans have been put on hold because of COVID19 but as soon as it's okay, I'm planning!)</p>
-          <p className="p">I love exploring new places, learning about cultures and eating different cuisines. I can speak English, Cantonese and Mandarin. I am currently learning French (I learned in high school but it's been a while) and Korean. </p>
-          <p className="p">I love eating everything and anything, except olives, eggplants, and some animal internal organs.</p>
-          <p className="p">I am usually the office snack lady. When I lived in New York, I bought Costco-sized goldfish only, never regular-size. As a result, I had a lot of goldfish to share.</p>
-          <p className="p">I am the go-to restaurant recommender in all of my friend groups. I am known to obsessively (meticulously) "star" ⭐   restaurants on my Google Maps.</p>
-          <p className="p">I'm trying to read 100 books this year. I already know I'm not going to make it, but it's fun seeing how close I get! I love reading fiction, biographies and the occasional mystery.</p>
-          <p className="p">I watch too much TV but my all-time favorite television show is The West Wing. I also love watching cooking shows like The Great British Bake Off and Guy's Grocery Games.</p>
+          <p className="p">
+            I grew up as a TCK (third culture kid born in Hong Kong 🇭🇰 , raised
+            in Shanghai 🇨🇳 , attended American international school 🇺🇸 ). I was
+            lucky enough to experience many different cultures.{" "}
+          </p>
+          <p className="p">
+            As a result, I love to travel. I have been to 18 countries, and I'm
+            always on Google Flights looking for cheap airfare! (obviously all
+            my travel plans have been put on hold because of COVID19 but as soon
+            as it's okay, I'm planning!)
+          </p>
+          <p className="p">
+            I love exploring new places, learning about cultures and eating
+            different cuisines. I can speak English, Cantonese and Mandarin. I
+            am currently learning French (I learned in high school but it's been
+            a while) and Korean.{" "}
+          </p>
+          <p className="p">
+            I love eating everything and anything, except olives, eggplants, and
+            some animal internal organs.
+          </p>
+          <p className="p">
+            I am usually the office snack lady. When I lived in New York, I
+            bought Costco-sized goldfish only, never regular-size. As a result,
+            I had a lot of goldfish to share.
+          </p>
+          <p className="p">
+            I am the go-to restaurant recommender in all of my friend groups. I
+            am known to obsessively (meticulously) "star" ⭐ restaurants on my
+            Google Maps.
+          </p>
+          <p className="p">
+            I'm trying to read 100 books this year. I already know I'm not going
+            to make it, but it's fun seeing how close I get! I love reading
+            fiction, biographies and the occasional mystery.
+          </p>
+          <p className="p">
+            I watch too much TV but my all-time favorite television show is The
+            West Wing. I also love watching cooking shows like The Great British
+            Bake Off and Guy's Grocery Games.
+          </p>
           <p className="p">I love going to concerts and listening to music.</p>
         </div>
       </section>
