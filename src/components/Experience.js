@@ -5,6 +5,8 @@ import { mdiStar } from "@mdi/js"
 import { mdiMapMarker } from "@mdi/js"
 
 export default function Experience() {
+
+  let iconColor = "#c175f0"
   return (
     <div className="container">
       <div className="columns is-variable is-8">
@@ -14,7 +16,7 @@ export default function Experience() {
             <h5 className="h5">
               <b>Topix Media Lab</b>{" "}
               <span>
-                <Icon path={mdiMapMarker} color="#760ab9" size={0.85} />
+                <Icon path={mdiMapMarker} color={iconColor} size={0.85} />
               </span>{" "}
               New York, NY
             </h5>
@@ -53,7 +55,7 @@ export default function Experience() {
             <h5 className="h5">
               <b>Ibis Yearbook</b>{" "}
               <span>
-                <Icon path={mdiMapMarker} color="#760ab9" size={0.85} />
+                <Icon path={mdiMapMarker} color={iconColor} size={0.85} />
               </span>{" "}
               Coral Gables, FL
             </h5>
@@ -74,7 +76,7 @@ export default function Experience() {
             <h5 className="h5">
               <b>Ironhack</b>{" "}
               <span>
-                <Icon path={mdiMapMarker} color="#760ab9" size={0.85} />
+                <Icon path={mdiMapMarker} color={iconColor} size={0.85} />
               </span>{" "}
               Remote
             </h5>
@@ -85,7 +87,7 @@ export default function Experience() {
               <span>
                 <Icon
                   path={mdiStar}
-                  color="#760ab9"
+                  color={iconColor}
                   size={0.5}
                   className="bullet-icon"
                 />
@@ -98,7 +100,7 @@ export default function Experience() {
               <span>
                 <Icon
                   path={mdiStar}
-                  color="#760ab9"
+                  color={iconColor}
                   size={0.5}
                   className="bullet-icon"
                 />
@@ -111,7 +113,7 @@ export default function Experience() {
               <span>
                 <Icon
                   path={mdiStar}
-                  color="#760ab9"
+                  color={iconColor}
                   size={0.5}
                   className="bullet-icon"
                 />
@@ -128,7 +130,7 @@ export default function Experience() {
             <h5 className="h5">
               <b>CareerFoundry</b>{" "}
               <span>
-                <Icon path={mdiMapMarker} color="#760ab9" size={0.85} />
+                <Icon path={mdiMapMarker} color={iconColor} size={0.85} />
               </span>{" "}
               Remote
             </h5>
@@ -139,7 +141,7 @@ export default function Experience() {
               <span>
                 <Icon
                   path={mdiStar}
-                  color="#760ab9"
+                  color={iconColor}
                   size={0.5}
                   className="bullet-icon"
                 />
@@ -154,7 +156,7 @@ export default function Experience() {
               <span>
                 <Icon
                   path={mdiStar}
-                  color="#760ab9"
+                  color={iconColor}
                   size={0.5}
                   className="bullet-icon"
                 />
@@ -171,7 +173,7 @@ export default function Experience() {
             <h5 className="h5">
               <b>University of Miami</b>{" "}
               <span>
-                <Icon path={mdiMapMarker} color="#760ab9" size={0.85} />
+                <Icon path={mdiMapMarker} color={iconColor}size={0.85} />
               </span>{" "}
               Coral Gables, FL
             </h5>
@@ -183,7 +185,7 @@ export default function Experience() {
               <span>
                 <Icon
                   path={mdiStar}
-                  color="#760ab9"
+                  color={iconColor}
                   size={0.5}
                   className="bullet-icon"
                 />

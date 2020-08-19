@@ -1,13 +1,8 @@
 import React, { Component } from "react"
-import { Link } from "gatsby"
 import Clipboard from "clipboard"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import Icon from "@mdi/react"
 import { mdiStar } from "@mdi/js"
-
-//Images
-import photo from "../images/murakami.jpg"
-import mediaBoxPhoto from "../images/mediabox.jpg"
 
 //Styles
 import "../styles/index.scss"
@@ -30,11 +25,6 @@ class Home extends Component {
       })
     }
 
-    // var scroll = new SmoothScroll('a[href*="#"]', {
-    //   speed: 300,
-    //   speedAsDuration: true,
-    //   easing: "easeInOutCubic",
-    // })
   }
 
   handleScroll = e => {
@@ -187,7 +177,7 @@ class Home extends Component {
               </div>
               <div className="column photo-column">
                 <img
-                  src={photo}
+                  src="https://res.cloudinary.com/michelleytlock/image/upload/v1597828566/portfolio/murakami-sized-down_q9dqvp.png"
                   alt="Michelle Lock"
                   className="main-photo"
                   data-sal-duration="800"
@@ -211,7 +201,7 @@ class Home extends Component {
                 data-sal-easing="ease-out-bounce"
               >
                 <h2 className="h2">Selected Works</h2>
-                <img src={mediaBoxPhoto} alt="MediaBox Project" />
+                <img src="https://res.cloudinary.com/michelleytlock/image/upload/v1597742964/portfolio/Mockup_hh_vj6bkp.png" alt="MediaBox Project" />
                 <h3 className="h3">History Hunt</h3>
                 <h5 className="h5">
                   A mobile application for the urban explorer, embarking on
@@ -238,7 +228,7 @@ class Home extends Component {
                 data-sal-delay="100"
                 data-sal-easing="ease-out-bounce"
               >
-                <img src={mediaBoxPhoto} alt="MediaBox Project Photo" />
+                <img src="https://res.cloudinary.com/michelleytlock/image/upload/v1597761723/portfolio/Mediabox-mockup_dm576p.png" alt="MediaBox Project" />
                 <h3 className="h3">MediaBox</h3>
                 <h5 className="h5">
                   A full-stack web application I created from scratch using MERN
