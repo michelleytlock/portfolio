@@ -6,7 +6,7 @@ import { mdiGithub } from "@mdi/js"
 
 import homeButton from "../images/Michelle.png"
 
-export default function Navbar() {
+export default function Navbar(props) {
   const [isActive, setisActive] = React.useState(false)
 
   return (
@@ -71,7 +71,7 @@ export default function Navbar() {
               target="_blank"
               rel="noreferrer"
             >
-              <Icon path={mdiLinkedin} color="white" size={1} />
+              <Icon path={mdiLinkedin} color={props.color} size={1} />
             </a>
             <a
               className="navbar-item"
@@ -79,7 +79,7 @@ export default function Navbar() {
               target="_blank"
               rel="noreferrer"
             >
-              <Icon path={mdiGithub} color="white" size={1} />
+              <Icon path={mdiGithub} color={props.color} size={1} />
             </a>
           </div>
         </div>

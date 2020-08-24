@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { Link } from "gatsby"
 import Clipboard from "clipboard"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import Icon from "@mdi/react"
@@ -12,8 +13,13 @@ import "../styles/home.css"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import Experience from "../components/Experience"
+import Head from '../components/Head'
 
 class Home extends Component {
+  state = {
+    navColor: "white",
+  }
+
   componentDidMount() {
     document.addEventListener("scroll", this.handleScroll)
     if (typeof window !== "undefined") {
@@ -24,7 +30,6 @@ class Home extends Component {
         easing: "easeInOutCubic",
       })
     }
-
   }
 
   handleScroll = e => {
@@ -40,11 +45,17 @@ class Home extends Component {
       for (let i = 0; i < navbarItem.length; i++) {
         navbarItem[i].setAttribute("style", "color: black")
       }
+      this.setState({
+        navColor: "black",
+      })
     } else {
       navbar.setAttribute("style", "background-color: #760ab9")
       for (let i = 0; i < navbarItem.length; i++) {
         navbarItem[i].setAttribute("style", "color: white")
       }
+      this.setState({
+        navColor: "white",
+      })
     }
   }
 
@@ -69,6 +80,7 @@ class Home extends Component {
   render() {
     return (
       <>
+        <Head title="Home" />
         <nav className="scroll-nav">
           <ul>
             <li>
@@ -88,7 +100,7 @@ class Home extends Component {
         <section id="top" className="hero is-primary is-fullheight">
           {/* <!-- Hero head: will stick at the top --> */}
           <div className="hero-head">
-            <Navbar />
+            <Navbar color={this.state.navColor} />
           </div>
 
           {/* <!-- Hero content: will be in the middle --> */}
@@ -201,12 +213,20 @@ class Home extends Component {
                 data-sal-easing="ease-out-bounce"
               >
                 <h2 className="h2">Selected Works</h2>
-                <img src="https://res.cloudinary.com/michelleytlock/image/upload/v1597742964/portfolio/Mockup_hh_vj6bkp.png" alt="MediaBox Project" />
-                <h3 className="h3">History Hunt</h3>
-                <h5 className="h5">
-                  A mobile application for the urban explorer, embarking on
-                  scavenger hunts for historical locations in their cities.
-                </h5>
+                <Link to="/history-hunt">
+                  <div className="project-img">
+                    <img
+                      className="home-project-img"
+                      src="https://res.cloudinary.com/michelleytlock/image/upload/v1597742964/portfolio/Mockup_hh_vj6bkp.png"
+                      alt="MediaBox Project"
+                    />
+                  </div>
+                  <h3 className="black-text h3">History Hunt</h3>
+                  <h5 className="black-text h5">
+                    A mobile application for the urban explorer, embarking on
+                    scavenger hunts for historical locations in their cities.
+                  </h5>
+                </Link>
               </div>
               <div
                 className="project"
@@ -215,11 +235,17 @@ class Home extends Component {
                 data-sal-delay="100"
                 data-sal-easing="ease-out-bounce"
               >
-                <img src="https://res.cloudinary.com/michelleytlock/image/upload/v1597663107/Frame_1_rxpxen.png" alt="MediaBox Project" />
-                <h3 className="h3">Verbadisco</h3>
-                <h5 className="h5">
-                  A mobile application for the ultimate Harry Potter fan.
-                </h5>
+                <Link to="/verbadisco">
+                  <img
+                    className="home-project-img"
+                    src="https://res.cloudinary.com/michelleytlock/image/upload/v1597663107/Frame_1_rxpxen.png"
+                    alt="MediaBox Project"
+                  />
+                  <h3 className="black-text h3">Verbadisco</h3>
+                  <h5 className="black-text h5">
+                    A mobile application for the ultimate Harry Potter fan.
+                  </h5>
+                </Link>
               </div>
               <div
                 className="project"
@@ -228,13 +254,20 @@ class Home extends Component {
                 data-sal-delay="100"
                 data-sal-easing="ease-out-bounce"
               >
-                <img src="https://res.cloudinary.com/michelleytlock/image/upload/v1597761723/portfolio/Mediabox-mockup_dm576p.png" alt="MediaBox Project" />
-                <h3 className="h3">MediaBox</h3>
-                <h5 className="h5">
-                  A full-stack web application I created from scratch using MERN
-                  stack. It is an application that gives users recommendations
-                  on what to watch based on their movie/tv show preferences.
-                </h5>
+                <Link to="/mediabox">
+                  <img
+                    className="home-project-img"
+                    src="https://res.cloudinary.com/michelleytlock/image/upload/v1597761723/portfolio/Mediabox-mockup_dm576p.png"
+                    alt="MediaBox Project"
+                  />
+                  <h3 className="black-text h3">MediaBox</h3>
+                  <h5 className="black-text h5">
+                    A full-stack web application I created from scratch using
+                    MERN stack. It is an application that gives users
+                    recommendations on what to watch based on their movie/tv
+                    show preferences.
+                  </h5>
+                </Link>
               </div>
             </div>
           </div>

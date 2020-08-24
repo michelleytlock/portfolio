@@ -1,5 +1,5 @@
 <p align="center">
-  My personal portfolio & blog. Built with <a href="https://www.gatsbyjs.org">Gatsby.js</a>.
+  My personal portfolio. Built with <a href="https://www.gatsbyjs.org">Gatsby.js</a>.
 </p>
 
 <p align="center">

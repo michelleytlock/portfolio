@@ -11,9 +11,11 @@ import Emoji from "../components/Emoji"
 import "../styles/index.scss"
 import "../styles/home.css"
 
+import Head from '../components/Head'
+
 const About = () => {
   return (
-    <>
+    <><Head title="About" />
       <section className="hero is-primary is-medium">
         {/* <!-- Hero head: will stick at the top --> */}
         <div className="hero-head">
@@ -221,7 +223,7 @@ const About = () => {
                     not going to make it, but it's fun seeing how close I get! I
                     love reading fiction, biographies and the occasional
                     mystery. This is what I'm reading now:
-                  </p><img src="http://images1.penguinrandomhouse.com/cover/700jpg/9780399590504" alt="Educated by Tara Westover" />
+                  </p><img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1f/Educated_%28Tara_Westover%29.png/220px-Educated_%28Tara_Westover%29.png" alt="Educated by Tara Westover" />
                 </div>
               </div>
               <div className="tile is-child notification is-success">

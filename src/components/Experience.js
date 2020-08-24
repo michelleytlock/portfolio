@@ -10,7 +10,7 @@ export default function Experience() {
   return (
     <div className="container">
       <div className="columns is-variable is-8">
-        <div className="intro column">
+        <div className="column">
           <h3 className="h3">Professional Experience</h3>
           <div className="position">
             <h5 className="h5">
@@ -70,7 +70,7 @@ export default function Experience() {
             </div>
           </div>
         </div>
-        <div className="intro column">
+        <div className="column">
           <h3 className="h3">Education</h3>
           <div className="position">
             <h5 className="h5">

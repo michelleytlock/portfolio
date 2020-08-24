@@ -4,10 +4,11 @@ import { Link } from "gatsby"
 //Components
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+import Head from '../components/Head'
 
 const Projects = () => {
   return (
-    <>
+    <><Head title="Projects" />
       <section className="hero is-medium">
         {/* <!-- Hero head: will stick at the top --> */}
         <div className="hero-head">
@@ -114,7 +115,7 @@ const Projects = () => {
             </div>
             <div className="tile is-parent">
               <div className="tile is-child element">
-                <Link to="/edipresse">
+                <Link to="/projects/edipresse">
                   <img src="https://res.cloudinary.com/michelleytlock/image/upload/v1597831011/portfolio/IMG_7835color_rzucdp.png" alt="Hong Kong Tatler Weddings" />
                   <div className="overlay">
                     <div className="element-type">

@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import { navigate } from "gatsby"
 import Typed from "typed.js"
+import Head from '../components/Head'
 
 //Styles
 import "../styles/index.scss"
@@ -25,6 +26,7 @@ class Index extends Component {
   render() {
     return (
       <>
+        <Head title="Home" />
         <section className="hero is primary is-fullheight typed-background">
           <div className="hero-body">
             <div className="container">
