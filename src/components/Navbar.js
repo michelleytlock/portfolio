@@ -65,6 +65,13 @@ export default function Navbar(props) {
             >
               About
             </Link>
+            <Link
+              className="navbar-item"
+              to="/contact"
+              activeClassName="is-active"
+            >
+              Contact
+            </Link>
             <a
               className="navbar-item"
               href="https://www.linkedin.com/in/michelleytlock/"

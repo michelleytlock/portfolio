@@ -6,12 +6,11 @@ import Footer from "../components/Footer"
 import Experience from "../components/Experience"
 import Tool from "../components/Tool"
 import Emoji from "../components/Emoji"
+import Head from '../components/Head'
 
 //Styles
 import "../styles/index.scss"
 import "../styles/home.css"
-
-import Head from '../components/Head'
 
 const About = () => {
   return (

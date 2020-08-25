@@ -10,7 +10,7 @@ export default function Next(props) {
             Next Up
           </h2>
           {props.next === "historyHunt" ? (
-            <Link to="/history-hunt">
+            <Link to="/projects/history-hunt">
               <div className="project-img">
                 <img
                   className="home-project-img"
@@ -25,7 +25,7 @@ export default function Next(props) {
               </h5>
             </Link>
           ) : props.next === "mediaBox" ? (
-            <Link to="/mediabox">
+            <Link to="/projects/mediabox">
               <img
                 className="home-project-img"
                 src="https://res.cloudinary.com/michelleytlock/image/upload/v1597761723/portfolio/Mediabox-mockup_dm576p.png"
@@ -39,7 +39,7 @@ export default function Next(props) {
               </h5>
             </Link>
           ) : props.next === "verbadisco" ? (
-            <Link to="/verbadisco">
+            <Link to="/projects/verbadisco">
               <img
                 className="home-project-img"
                 src="https://res.cloudinary.com/michelleytlock/image/upload/v1597663107/Frame_1_rxpxen.png"

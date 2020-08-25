@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { BLOCKS } from '@contentful/rich-text-types'
+import { BLOCKS } from "@contentful/rich-text-types"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 import "../styles/project-template.css"
@@ -9,7 +9,7 @@ import "../styles/project-template.css"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import Next from "../components/Next"
-import Head from '../components/Head'
+import Head from "../components/Head"
 
 export const query = graphql`
   query($slug: String!) {
@@ -47,14 +47,26 @@ const Project = props => {
         const url = node.data.target.fields.file["en-US"].url
         return <img style={{ borderRadius: "15px" }} alt={alt} src={url} />
       },
-      [BLOCKS.PARAGRAPH]: (node, children) => (
-        <p className="p">{children}</p>
-      )
+      [BLOCKS.PARAGRAPH]: (node, children) => <p className="p">{children}</p>,
     },
   }
 
+  let randomNum = Math.floor(Math.random() * 3)
+  let randomNext = ''
+
+  if (randomNum === 0 && props.data.contentfulProject.title !== 'History Hunt') {
+    randomNext = 'historyHunt'
+  } else if (randomNum === 1 && props.data.contentfulProject.title !== 'MediaBox') {
+    randomNext = 'mediaBox'
+  } else if (randomNum === 2 && props.data.contentfulProject.title !== 'Verbadisco') {
+    randomNext = 'verbadisco'
+  } else {
+    randomNext = 'historyHunt'
+  }
+
   return (
-    <><Head title={props.data.contentfulProject.title} />
+    <>
+      <Head title={props.data.contentfulProject.title} />
       <section className="hero is-medium">
         {/* <!-- Hero head: will stick at the top --> */}
         <div className="hero-head">
@@ -71,13 +83,24 @@ const Project = props => {
             <h2 style={{ marginTop: "20px" }} className="h2">
               {props.data.contentfulProject.title}
             </h2>
-            <h6 className="h6"><b>My Role: </b>{props.data.contentfulProject.myRole.myRole}</h6>
-            <h6 className="h6"><b>Category: </b>{props.data.contentfulProject.category}</h6>
-            <h6 className="h6"><b>Content Type: </b>{props.data.contentfulProject.type}</h6>
-            <h6 className="h6"><b>Tools Used: </b>
+            <h6 className="h6">
+              <b>My Role: </b>
+              {props.data.contentfulProject.myRole.myRole}
+            </h6>
+            <h6 className="h6">
+              <b>Category: </b>
+              {props.data.contentfulProject.category}
+            </h6>
+            <h6 className="h6">
+              <b>Content Type: </b>
+              {props.data.contentfulProject.type}
+            </h6>
+            <h6 className="h6">
+              <b>Tools Used: </b>
               {props.data.contentfulProject.toolsUsed.toolsUsed}
             </h6>
-            <h5 className="h5"><b>Summary: </b>
+            <h5 className="h5">
+              <b>Summary: </b>
               {props.data.contentfulProject.summary.summary}
             </h5>
           </div>
@@ -93,7 +116,7 @@ const Project = props => {
         </div>
       </section>
 
-      <Next next="historyHunt" />
+      <Next next={randomNext} />
 
       <Footer />
     </>
