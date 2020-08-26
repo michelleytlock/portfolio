@@ -6,7 +6,7 @@ export default function Next(props) {
     <section className="section is-medium">
       <div className="container">
         <div className="project">
-          <h2 className="h2" style={{ marginBottom: "20px" }}>
+          <h2 style={{ marginBottom: "20px" }}>
             Next Up
           </h2>
           {props.next === "historyHunt" ? (
@@ -18,8 +18,8 @@ export default function Next(props) {
                   alt="MediaBox Project"
                 />
               </div>
-              <h3 className="black-text h3">History Hunt</h3>
-              <h5 className="black-text h5">
+              <h3 className="black-text">History Hunt</h3>
+              <h5 className="black-text">
                 A mobile application for the urban explorer, embarking on
                 scavenger hunts for historical locations in their cities.
               </h5>
@@ -31,8 +31,8 @@ export default function Next(props) {
                 src="https://res.cloudinary.com/michelleytlock/image/upload/v1597761723/portfolio/Mediabox-mockup_dm576p.png"
                 alt="MediaBox Project"
               />
-              <h3 className="black-text h3">MediaBox</h3>
-              <h5 className="black-text h5">
+              <h3 className="black-text">MediaBox</h3>
+              <h5 className="black-text">
                 A full-stack web application I created from scratch using MERN
                 stack. It is an application that gives users recommendations on
                 what to watch based on their movie/tv show preferences.
@@ -45,8 +45,8 @@ export default function Next(props) {
                 src="https://res.cloudinary.com/michelleytlock/image/upload/v1597663107/Frame_1_rxpxen.png"
                 alt="MediaBox Project"
               />
-              <h3 className="black-text h3">Verbadisco</h3>
-              <h5 className="black-text h5">
+              <h3 className="black-text">Verbadisco</h3>
+              <h5 className="black-text">
                 A mobile application for the ultimate Harry Potter fan.
               </h5>
             </Link>

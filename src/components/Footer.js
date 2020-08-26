@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="content has-text-centered">
-        <h4 className="h4">Designed & Coded by Michelle Lock, ©2020</h4>
+        <h4>Designed & Coded by Michelle Lock, ©2020</h4>
         <p>
           I'd love to grab coffee to talk about anything - from design and tech
           to food and travel. Message me so we can plan something!

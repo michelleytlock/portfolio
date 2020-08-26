@@ -81,7 +81,7 @@ class Home extends Component {
     return (
       <>
         <Head title="Home" />
-        <nav className="scroll-nav">
+        {/* <nav className="scroll-nav">
           <ul>
             <li>
               <button onClick={() => scrollTo("#top")}>Back to Top</button>
@@ -95,7 +95,7 @@ class Home extends Component {
               <button onClick={() => scrollTo("#about")}>Experience</button>
             </li>
           </ul>
-        </nav>
+        </nav> */}
 
         <section id="top" className="hero is-primary is-fullheight">
           {/* <!-- Hero head: will stick at the top --> */}
@@ -113,8 +113,8 @@ class Home extends Component {
                 data-sal-delay="100"
                 data-sal-easing="ease-out-bounce"
               >
-                <h1 className="h1">Michelle Lock</h1>
-                <h4 className="h4">
+                <h1>Michelle Lock</h1>
+                <h4>
                   A UX designer and full-stack developer passionate about using
                   design and technology to transform our lives and solve
                   problems.
@@ -144,8 +144,8 @@ class Home extends Component {
                 data-sal-delay="100"
                 data-sal-easing="ease-out-bounce"
               >
-                <h2 className="h2">Hi I'm Michelle.</h2>
-                <h4 className="h4 bullet-list">My dreams are:</h4>
+                <h2>Hi I'm Michelle.</h2>
+                <h4 className="bullet-list">My dreams are:</h4>
                 <div className="bullet-item">
                   <span>
                     <Icon
@@ -155,7 +155,7 @@ class Home extends Component {
                       size={1}
                     />
                   </span>
-                  <h5 className="h5">
+                  <h5>
                     To be a designer in an agency-like environment where I can
                     work on challenging projects that involve creativity and
                     problem solving.
@@ -170,7 +170,7 @@ class Home extends Component {
                       size={1}
                     />
                   </span>
-                  <h5 className="h5">
+                  <h5>
                     To achieve goals every day working in a team that respects
                     and inspires each other while also learning from each other.
                   </h5>
@@ -184,7 +184,7 @@ class Home extends Component {
                       size={1}
                     />
                   </span>
-                  <h5 className="h5">To be friends with Béyonce.</h5>
+                  <h5>To be friends with Béyonce.</h5>
                 </div>
               </div>
               <div className="column photo-column">
@@ -212,8 +212,8 @@ class Home extends Component {
                 data-sal-delay="100"
                 data-sal-easing="ease-out-bounce"
               >
-                <h2 className="h2">Selected Works</h2>
-                <Link to="/history-hunt">
+                <h2>Selected Works</h2>
+                <Link to="/projects/history-hunt">
                   <div className="project-img">
                     <img
                       className="home-project-img"
@@ -221,8 +221,8 @@ class Home extends Component {
                       alt="MediaBox Project"
                     />
                   </div>
-                  <h3 className="black-text h3">History Hunt</h3>
-                  <h5 className="black-text h5">
+                  <h3 className="black-text">History Hunt</h3>
+                  <h5 className="black-text">
                     A mobile application for the urban explorer, embarking on
                     scavenger hunts for historical locations in their cities.
                   </h5>
@@ -235,14 +235,14 @@ class Home extends Component {
                 data-sal-delay="100"
                 data-sal-easing="ease-out-bounce"
               >
-                <Link to="/verbadisco">
+                <Link to="/projects/verbadisco">
                   <img
                     className="home-project-img"
                     src="https://res.cloudinary.com/michelleytlock/image/upload/v1597663107/Frame_1_rxpxen.png"
                     alt="MediaBox Project"
                   />
-                  <h3 className="black-text h3">Verbadisco</h3>
-                  <h5 className="black-text h5">
+                  <h3 className="black-text">Verbadisco</h3>
+                  <h5 className="black-text">
                     A mobile application for the ultimate Harry Potter fan.
                   </h5>
                 </Link>
@@ -254,14 +254,14 @@ class Home extends Component {
                 data-sal-delay="100"
                 data-sal-easing="ease-out-bounce"
               >
-                <Link to="/mediabox">
+                <Link to="/projects/mediabox">
                   <img
                     className="home-project-img"
                     src="https://res.cloudinary.com/michelleytlock/image/upload/v1597761723/portfolio/Mediabox-mockup_dm576p.png"
                     alt="MediaBox Project"
                   />
-                  <h3 className="black-text h3">MediaBox</h3>
-                  <h5 className="black-text h5">
+                  <h3 className="black-text">MediaBox</h3>
+                  <h5 className="black-text">
                     A full-stack web application I created from scratch using
                     MERN stack. It is an application that gives users
                     recommendations on what to watch based on their movie/tv

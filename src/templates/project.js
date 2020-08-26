@@ -46,8 +46,7 @@ const Project = props => {
         const alt = node.data.target.fields.title["en-US"]
         const url = node.data.target.fields.file["en-US"].url
         return <img style={{ borderRadius: "15px" }} alt={alt} src={url} />
-      },
-      [BLOCKS.PARAGRAPH]: (node, children) => <p className="p">{children}</p>,
+      }
     },
   }
 
@@ -80,26 +79,26 @@ const Project = props => {
               src={props.data.contentfulProject.mainImage.file.url}
               alt={props.data.contentfulProject.title}
             />
-            <h2 style={{ marginTop: "20px" }} className="h2">
+            <h2 style={{ marginTop: "20px" }}>
               {props.data.contentfulProject.title}
             </h2>
-            <h6 className="h6">
+            <h6>
               <b>My Role: </b>
               {props.data.contentfulProject.myRole.myRole}
             </h6>
-            <h6 className="h6">
+            <h6>
               <b>Category: </b>
               {props.data.contentfulProject.category}
             </h6>
-            <h6 className="h6">
+            <h6>
               <b>Content Type: </b>
               {props.data.contentfulProject.type}
             </h6>
-            <h6 className="h6">
+            <h6>
               <b>Tools Used: </b>
               {props.data.contentfulProject.toolsUsed.toolsUsed}
             </h6>
-            <h5 className="h5">
+            <h5>
               <b>Summary: </b>
               {props.data.contentfulProject.summary.summary}
             </h5>

@@ -51,42 +51,42 @@
   font-weight: 900;
 }
 
-.h1 {
+h1 {
   font-size: 5rem;
   font-weight: 700;
   line-height: 4.75rem;
   margin-bottom: 0.5rem;
 }
 
-.h2 {
+h2 {
   font-size: 3rem;
   font-weight: 700;
   line-height: 3.5rem;
   margin-bottom: 0.5rem;
 }
 
-.h3 {
+h3 {
   margin-top: 10px;
   font-size: 2rem;
   font-weight: 700;
 }
 
-.h4 {
+h4 {
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-.h5 {
+h5 {
   font-size: 1.3rem;
   font-weight: 400;
 }
 
-.h6 {
+h6 {
   font-size: 1.1rem;
   font-style: italic;
 }
 
-.p {
+p {
   font-size: 1rem;
   line-height: 1.75rem;
 }

@@ -25,10 +25,10 @@ const About = () => {
         <div className="hero-body">
           <div className="container">
             <div className="intro">
-              <h2 className="h2">
+              <h2>
                 I am a UX designer currently based in Hong Kong.
               </h2>
-              <h4 className="h4">
+              <h4>
                 <button
                   className="button is-rounded"
                   href="https://drive.google.com/file/d/1BwhxBcIfDLWb89ZqIxUvPxjwrzEMVWK6/view?usp=sharing"
@@ -47,7 +47,7 @@ const About = () => {
 
       <section className="section is-white">
         <div className="container">
-          <h3 className="h3">Tools I Use</h3>
+          <h3>Tools I Use</h3>
           <div className="columns">
             <div className="column">
               <Tool
@@ -119,7 +119,7 @@ const About = () => {
 
       <section className="section is-white">
         <div className="container">
-          <h3 className="h3" style={{ marginBottom: "20px" }}>
+          <h3 style={{ marginBottom: "20px" }}>
             More About Me
           </h3>
           <div className="tile is-ancestor">
