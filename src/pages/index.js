@@ -1,12 +1,13 @@
 import React, { Component } from "react"
 import { navigate } from "gatsby"
+import '../styles/index.css'
 import Typed from "typed.js"
 import Head from "../components/Head"
 
 class Index extends Component {
   componentDidMount() {
     const options = {
-      strings: ["Hi, I'm Michelle,<br />nice to meet you!"],
+      strings: ["Hi, I'm Michelle, nice to meet you!"],
       typeSpeed: 50,
       onComplete: () => {
         setTimeout(() => {
