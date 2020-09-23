@@ -11,21 +11,21 @@ import Head from "../components/Head"
 import ProjectFeature from "../components/ProjectFeature"
 
 const Home = () => {
-  const clip = new ClipboardJS(".home__contactButton")
+  // const clip = new ClipboardJS(".home__contactButton")
 
-  clip.on("success", e => {
-    console.log("success!", e)
-    // document.querySelectorAll(".home__contactButtonAlert").innerHTML =
-    //   "My email has been copied to your clipboard!"
-    e.clearSelection()
-  })
+  // clip.on("success", e => {
+  //   console.log("success!", e)
+  //   // document.querySelectorAll(".home__contactButtonAlert").innerHTML =
+  //   //   "My email has been copied to your clipboard!"
+  //   e.clearSelection()
+  // })
 
-  clip.on("error", e => {
-    // console.log('error!', e)
-    // document.querySelectorAll(".home__contactButtonAlert").innerHTML =
-    //   "That didn't work, sorry! :("
-    e.clearSelection()
-  })
+  // clip.on("error", e => {
+  //   // console.log('error!', e)
+  //   // document.querySelectorAll(".home__contactButtonAlert").innerHTML =
+  //   //   "That didn't work, sorry! :("
+  //   e.clearSelection()
+  // })
 
   // const handleCopy = () => {
 
