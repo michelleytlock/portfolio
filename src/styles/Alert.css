@@ -17,3 +17,7 @@
  .alert > h3 {
    font-size: 14px;
  }
+
+ .alert__link {
+   color: white;
+ }
