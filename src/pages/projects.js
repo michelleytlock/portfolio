@@ -1,137 +1,113 @@
 import React from "react"
-import { Link } from "gatsby"
+import "../styles/projects.css"
 
 //Components
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
-import Head from '../components/Head'
+import Head from "../components/Head"
+import Project from "../components/Project"
 
 const Projects = () => {
   return (
-    <><Head title="Projects" />
-      <section className="hero is-medium">
-        {/* <!-- Hero head: will stick at the top --> */}
-        <div className="hero-head">
-          <Navbar />
-        </div>
-      </section>
+    <div className="projects">
+      <Head title="🔥 Projects" />
+      <Navbar />
+      <div className="projects__content">
+        <div className="projects__row">
+          <div className="projects__columnNarrow">
+            <Project
+              url="/projects/verbadisco"
+              img="https://res.cloudinary.com/michelleytlock/image/upload/v1597663106/Frame_2_cs6a6q.png"
+              title="Verbadisco"
+              tag="UX/UI DESIGN"
+            />
 
-      <section className="section is-medium">
-        <div className="container">
-          <div className="tile is-ancestor">
-            <div className="tile is-vertical is-parent">
-              <div className="tile is-child element">
-                <Link to="/projects/verbadisco">
-                  <img src="https://res.cloudinary.com/michelleytlock/image/upload/v1597663106/Frame_2_cs6a6q.png" alt="Verbadisco Project" />
-                  <div className="overlay">
-                    <div className="element-type">
-                      <h6>UX/UI DESIGN</h6>
-                      <h3>Verbadisco</h3>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-              <div className="tile is-child element">
-                <Link to="/projects/fitted">
-                  <img src="https://res.cloudinary.com/michelleytlock/image/upload/v1597730261/Multi-Devices-Mockup-Scene-Vol01_fyfdii.png" alt="Fitted Project" />
-                  <div className="overlay">
-                    <div className="element-type">
-                      <h6>UI DESIGN</h6>
-                      <h3>Fitted</h3>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-            </div>
-
-            <div className="tile is-8 is-parent">
-              <div className="tile is-child element">
-                <Link to="/projects/history-hunt">
-                  <img src="https://res.cloudinary.com/michelleytlock/image/upload/v1597742964/portfolio/Mockup_hh_vj6bkp.png" alt="History Hunt Project" />
-                  <div className="overlay">
-                    <div className="element-type">
-                      <h6>UX/UI DESIGN</h6>
-                      <h3>History Hunt</h3>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-            </div>
+            <Project
+              url="/projects/fitted"
+              img="https://res.cloudinary.com/michelleytlock/image/upload/v1597730261/Multi-Devices-Mockup-Scene-Vol01_fyfdii.png"
+              title="Fitted"
+              tag="UI DESIGN"
+            />
           </div>
 
-          <div className="tile is-ancestor">
-            <div className="tile is-8 is-parent">
-              <div className="tile is-child element">
-                <Link to="/projects/mediabox">
-                  <img src="https://res.cloudinary.com/michelleytlock/image/upload/v1597761723/portfolio/Mediabox-mockup_dm576p.png" alt="MediaBox Project" />
-                  <div className="overlay">
-                    <div className="element-type">
-                      <h6>WEB DEVELOPMENT</h6>
-                      <h3>MediaBox</h3>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-            </div>
-            <div className="tile is-vertical is-parent">
-              <div className="tile is-child element">
-                <Link to="/projects/aisle1">
-                  <img src="https://res.cloudinary.com/michelleytlock/image/upload/v1597760104/portfolio/iMac_h5hjxi.png" alt="Aisle 1 Project" />
-                  <div className="overlay">
-                    <div className="element-type">
-                      <h6>WEB DEVELOPMENT</h6>
-                      <h3>Aisle 1</h3>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-
-              <div className="tile is-child element">
-                <Link to="/projects/gigzilla">
-                  <img src="https://res.cloudinary.com/michelleytlock/image/upload/v1597762172/portfolio/Gigzilla-mockup_xp60og.png" alt="Gigzilla Project" />
-                  <div className="overlay">
-                    <div className="element-type">
-                      <h6>WEB DEVELOPMENT</h6>
-                      <h3>Gigzilla</h3>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="tile is-ancestor">
-            <div className="tile is-parent">
-              <div className="tile is-child element">
-                <Link to="/projects/topixmedialab">
-                  <img src="https://res.cloudinary.com/michelleytlock/image/upload/v1597840455/portfolio/001_cov1_us_beuuhg.png" alt="Topix Media Lab" />
-                  <div className="overlay">
-                    <div className="element-type">
-                      <h6>EDITORIAL</h6>
-                      <h3>Topix Media Lab</h3>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-            </div>
-            <div className="tile is-parent">
-              <div className="tile is-child element">
-                <Link to="/projects/edipresse">
-                  <img src="https://res.cloudinary.com/michelleytlock/image/upload/v1597831011/portfolio/IMG_7835color_rzucdp.png" alt="Hong Kong Tatler Weddings" />
-                  <div className="overlay">
-                    <div className="element-type">
-                      <h6>EDITORIAL</h6>
-                      <h3>Hong Kong Tatler Weddings</h3>
-                    </div>
-                  </div>
-                </Link>
-              </div>
-            </div>
+          <div className="projects__columnWide">
+            <Project
+              url="/projects/history-hunt"
+              img="https://res.cloudinary.com/michelleytlock/image/upload/v1597742964/portfolio/Mockup_hh_vj6bkp.png"
+              title="History Hunt"
+              tag="UX/UI DESIGN"
+            />
           </div>
         </div>
-      </section>
 
+        <div className="projects__row">
+          <div className="projects__column">
+            <Project
+              url="https://github.com/michelleytlock/amazon-clone"
+              img="https://images-na.ssl-images-amazon.com/images/G/01/gc/designs/livepreview/amazon_dkblue_noto_email_v2016_us-main._CB468775337_.png"
+              title="Amazon Clone"
+              tag="WEB DEVELOPMENT"
+            />
+          </div>
+
+          <div className="projects__column">
+            <Project
+              url="https://github.com/michelleytlock/spotify-clone"
+              img="https://b8g9x2x5.rocketcdn.me/wp-content/uploads/2018/08/spotify-logo-1920x1080_fouoik.jpg"
+              title="Spotify Clone"
+              tag="WEB DEVELOPMENT"
+            />
+          </div>
+        </div>
+
+        <div className="projects__row">
+          <div className="projects__columnWide">
+            <Project
+              url="/projects/mediabox"
+              img="https://res.cloudinary.com/michelleytlock/image/upload/v1597761723/portfolio/Mediabox-mockup_dm576p.png"
+              title="MediaBox"
+              tag="WEB DEVELOPMENT"
+            />
+          </div>
+          <div className="projects__columnNarrow">
+            <Project
+              url="/projects/aisle1"
+              img="https://res.cloudinary.com/michelleytlock/image/upload/v1597760104/portfolio/iMac_h5hjxi.png"
+              title="Aisle 1"
+              tag="WEB DEVELOPMENT"
+            />
+
+            <Project
+              url="/projects/gigzilla"
+              img="https://res.cloudinary.com/michelleytlock/image/upload/v1597762172/portfolio/Gigzilla-mockup_xp60og.png"
+              title="Gigzilla"
+              tag="WEB DEVELOPMENT"
+            />
+          </div>
+        </div>
+
+        <div className="projects__row">
+          <div className="projects__column">
+            <Project
+              url="/projects/topixmedialab"
+              img="https://res.cloudinary.com/michelleytlock/image/upload/v1597840455/portfolio/001_cov1_us_beuuhg.png"
+              title="Topix Media Lab"
+              tag="EDITORIAL"
+            />
+          </div>
+
+          <div className="projects__column">
+            <Project
+              url="/projects/edipresse"
+              img="https://res.cloudinary.com/michelleytlock/image/upload/v1597831011/portfolio/IMG_7835color_rzucdp.png"
+              title="Hong Kong Tatler Weddings"
+              tag="EDITORIAL"
+            />
+          </div>
+        </div>
+      </div>
       <Footer />
-    </>
+    </div>
   )
 }
 

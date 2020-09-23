@@ -1,0 +1,17 @@
+.experience {
+   margin: 100px 100px 0 100px;
+   display: flex;
+}
+
+.experience h3 {
+   font-size: 30px;
+   margin-bottom: 5px;
+}
+
+.experience__professional {
+   margin-right: 50px;
+}
+
+.experience__education {
+   margin-left: 50px;
+}

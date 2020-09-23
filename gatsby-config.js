@@ -13,6 +13,7 @@ module.exports = {
     description: `Portfolio of Michelle Lock`,
   },
   plugins: [
+    `gatsby-plugin-material-ui`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-smoothscroll`,
     {
@@ -22,7 +23,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    "gatsby-plugin-sass",
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     {

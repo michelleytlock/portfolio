@@ -1,0 +1,24 @@
+.projects__content {
+  padding: 100px;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.projects__row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.projects__columnNarrow {
+  flex: 0.3;
+}
+
+.projects__columnWide {
+  flex: 0.7;
+}
+
+.projects__column {
+  flex: 0.5;
+}

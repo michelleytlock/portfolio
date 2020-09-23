@@ -1,0 +1,27 @@
+.error {
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+ }
+
+.error__wrapper {
+   flex: 1;
+}
+
+.error__content {
+   padding: 100px;
+   display: flex;
+   justify-content: center;
+}
+
+.error__text > h2 {
+   font-size: 40px;
+   font-weight: 500;
+   margin-bottom: 20px;
+}
+
+.error__content > img {
+   margin-left: 50px;
+   height: 500px;
+   object-fit: contain;
+}

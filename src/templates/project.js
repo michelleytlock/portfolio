@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import { BLOCKS } from "@contentful/rich-text-types"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
-import "../styles/project-template.css"
+// import "../styles/project-template.css"
 
 //Components
 import Navbar from "../components/Navbar"

@@ -1,89 +1,47 @@
 import React from "react"
-import Icon from "@mdi/react"
-import { mdiAccount } from "@mdi/js"
-import { mdiEmail } from "@mdi/js"
-import { mdiAndroidMessages } from "@mdi/js"
+import "../styles/contact.css"
 
 //Components
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import Head from "../components/Head"
+import Emoji from "../components/Emoji"
 
 const Contact = () => {
   return (
-    <>
-      <Head title="Contact" />
-      <section className="hero is-primary is-fullheight">
-        {/* <!-- Hero head: will stick at the top --> */}
-        <div className="hero-head">
-          <Navbar />
-        </div>
-
-        {/* <!-- Hero content: will be in the middle --> */}
-        <div className="hero-body">
-          <div className="container" style={{ display: "flex", justifyContent: "center", alignContent: "center"}}>
-            <div className="intro">
-              <h2>Contact Me</h2>
-              <h3>
-                Want to work together or ask me a question?
-              </h3>
-              <form
-                name="Contact Form"
-                method="POST"
-                data-netlify="true"
-                data-netlify-honeypot="bot-field"
-              >
-                <input type="hidden" name="form-name" value="Contact Form" />
-                <div className="field">
-                  <p className="control has-icons-left">
-                    <input
-                      className="input is-medium"
-                      type="text"
-                      name="name"
-                      placeholder="Name"
-                    />
-                    <span className="icon is-small is-left">
-                      <Icon path={mdiAccount} color="#bdbdbd" size={1} />
-                    </span>
-                  </p>
-                </div>
-                <div className="field">
-                  <p className="control has-icons-left">
-                    <input
-                      className="input is-medium"
-                      type="email"
-                      name="email"
-                      placeholder="Email"
-                    />
-                    <span className="icon is-small is-left">
-                      <Icon path={mdiEmail} color="#bdbdbd" size={1} />
-                    </span>
-                  </p>
-                </div>
-                <div className="field">
-                  <p className="control">
-                    <textarea
-                      className="textarea is-medium"
-                      name="message"
-                      placeholder="Your Message"
-                    ></textarea>
-                  </p>
-                </div>
-                <div className="field">
-                  <p className="control">
-                    <button className="button is-white" type="submit">
-                      Send
-                    </button>
-                  </p>
-                </div>
-              </form>
+    <div className="contact">
+      <div className="contact__wrapper">
+        <Head title="👋 Contact" />
+        <Navbar />
+        <div className="contact__content">
+          <h2>Contact Me <Emoji label="woman technologist" symbol="👩🏻‍💻" /></h2>
+          <h3>Want to work together or grab a coffee?</h3>
+          <form
+            name="Contact Form"
+            method="POST"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
+            <input type="hidden" name="form-name" value="Contact Form" />
+            <div className="contact__formField">
+              <input type="text" name="name" placeholder="Name" />
             </div>
-          </div>
+            <div className="contact__formField">
+              <input type="email" name="email" placeholder="Email" />
+            </div>
+            <div className="contact__formField">
+              <textarea name="message" placeholder="Your Message"></textarea>
+            </div>
+            <div className="contact__formField">
+              <button className="contact__formButton" type="submit">
+                Send
+              </button>
+            </div>
+          </form>
         </div>
-      </section>
-
+      </div>
       <Footer />
-    </>
+    </div>
   )
 }
 

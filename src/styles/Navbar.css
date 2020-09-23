@@ -1,0 +1,35 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 100px 0 100px;
+}
+
+.navbar__home {
+  width: 100px;
+  object-fit: contain;
+  transition: transform 0.5s;
+}
+
+.navbar__home:hover {
+  transform: rotate(15deg);
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__menuItem {
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 20px;
+  color: #111;
+  font-weight: 500;
+  transition: transform 0.5s;
+}
+
+.navbar__menuItem:hover {
+  color: rebeccapurple;
+  transform: scale(1.1);
+}

@@ -1,0 +1,31 @@
+.experiencePosition {
+   margin-top: 20px;
+   margin-bottom: 30px;
+}
+
+.experiencePosition > h5 {
+   font-size: 22px;
+   font-weight: 400;
+   line-height: 26px;
+   letter-spacing: .5px;
+   margin-bottom: 5px;
+}
+
+.experiencePosition > h6 {
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 20px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+
+.experiencePosition__bullet {
+   display: flex;
+   align-items: flex-start;
+}
+
+.experiencePosition__bullet > p {
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 26px;
+}
