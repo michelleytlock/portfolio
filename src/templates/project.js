@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import { BLOCKS } from "@contentful/rich-text-types"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
+
 // import "../styles/project-template.css"
 
 //Components
@@ -10,6 +11,7 @@ import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import Next from "../components/Next"
 import Head from "../components/Head"
+import Alert from '../components/Alert'
 
 export const query = graphql`
   query($slug: String!) {
@@ -66,6 +68,7 @@ const Project = props => {
   return (
     <>
       <Head title={props.data.contentfulProject.title} />
+      <Alert />
       <section className="hero is-medium">
         {/* <!-- Hero head: will stick at the top --> */}
         <div className="hero-head">

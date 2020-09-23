@@ -6,12 +6,14 @@ import "../styles/404.css"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import Head from "../components/Head"
+import Alert from "../components/Alert"
 
 const NotFound = () => {
   return (
     <div className="error">
       <div className="error__wrapper">
         <Head title="🚨 404" />
+        <Alert />
         <Navbar />
         <div className="error__content">
           <div className="error__text">

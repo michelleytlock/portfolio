@@ -1,16 +1,18 @@
 import React from "react"
-import "../styles/projects.css"
+import "../styles/projects.css";
 
 //Components
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import Head from "../components/Head"
 import Project from "../components/Project"
+import Alert from "../components/Alert";
 
 const Projects = () => {
   return (
     <div className="projects">
       <Head title="🔥 Projects" />
+      <Alert />
       <Navbar />
       <div className="projects__content">
         <div className="projects__row">

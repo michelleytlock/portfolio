@@ -9,11 +9,13 @@ import Experience from "../components/Experience"
 import Tool from "../components/Tool"
 import Emoji from "../components/Emoji"
 import Head from "../components/Head"
+import Alert from "../components/Alert"
 
 const About = () => {
   return (
     <div className="about">
       <Head title="🍕 About" />
+      <Alert />
       <Navbar />
       <div className="about__content">
         <div

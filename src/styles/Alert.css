@@ -1,0 +1,19 @@
+.alert {
+   background-color: rebeccapurple;
+   color: white;
+   padding: 10px;
+   width: 100vw;
+   text-align: center;
+ }
+ 
+ .alert > h2, h3 {
+   font-weight: 500;
+ }
+ 
+ .alert > h2 {
+   font-size: 18px;
+ }
+ 
+ .alert > h3 {
+   font-size: 14px;
+ }

@@ -9,6 +9,7 @@ import Footer from "../components/Footer"
 import Experience from "../components/Experience"
 import Head from "../components/Head"
 import ProjectFeature from "../components/ProjectFeature"
+import Alert from "../components/Alert"
 
 const Home = () => {
   // const clip = new ClipboardJS(".home__contactButton")
@@ -34,7 +35,9 @@ const Home = () => {
   return (
     <div className="home">
       <Head title="✨ Home" />
+      <Alert />
       <Navbar />
+
       <div className="home__content">
         {/* INTRO */}
         <div
@@ -81,7 +84,9 @@ const Home = () => {
             title="MediaBox"
             description="An application that gives users recommendations on what to watch based on their movie/tv show preferences."
           />
-          <Link className="home__projectsButton" to="/projects">View All Projects</Link>
+          <Link className="home__projectsButton" to="/projects">
+            View All Projects
+          </Link>
         </div>
 
         {/* EXPERIENCE */}

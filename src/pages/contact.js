@@ -6,12 +6,14 @@ import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import Head from "../components/Head"
 import Emoji from "../components/Emoji"
+import Alert from "../components/Alert"
 
 const Contact = () => {
   return (
     <div className="contact">
       <div className="contact__wrapper">
         <Head title="👋 Contact" />
+        <Alert />
         <Navbar />
         <div className="contact__content">
           <h2>Contact Me <Emoji label="woman technologist" symbol="👩🏻‍💻" /></h2>
