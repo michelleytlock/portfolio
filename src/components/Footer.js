@@ -1,25 +1,38 @@
 import React from "react"
+import GitHubIcon from "@material-ui/icons/GitHub"
+import LinkedInIcon from "@material-ui/icons/LinkedIn"
+import Emoji from "./Emoji"
 import "../styles/Footer.css"
 
 export default function Footer() {
   return (
     <div className="footer">
-      <div className="footer__text">
-        <h4>Designed & Coded by Michelle Lock, ©2020</h4>
+      <div className="footer__left">
+        <h4>© Michelle Lock 2020</h4>
         <p>
-          I'd love to grab coffee to talk about anything - from design and tech
-          to food and travel. Message me so we can plan something!
+          Are you looking for: A hustler & designer who works hard but stays humble? A lifelong learner who asks questions? A passionate eater who loves entertainment and music? If so, get in touch!{" "}
+          <Emoji label="smiling face with smiling eyes" symbol="😊" />
         </p>
       </div>
 
-      <div>
-        <button className="footer__button"
-          // onClick={this.handleCopy}
-          data-clipboard-text="michelleytlock@gmail.com"
+      <div className="footer__right">
+        <h4>michelleytlock@gmail.com</h4>
+        <a
+          className="footer__icon"
+          href="https://www.linkedin.com/in/michelleytlock/"
+          target="_blank"
+          rel="noreferrer"
         >
-          Contact Me
-        </button>
-        <p className="footer__buttonMessage"> </p>
+          <LinkedInIcon />
+        </a>
+        <a
+          className="footer__icon"
+          href="https://github.com/michelleytlock"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <GitHubIcon />
+        </a>
       </div>
     </div>
   )

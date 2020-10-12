@@ -11,7 +11,7 @@ function Alert() {
           href="https://www.notion.so/Meet-Michelle-72456c13129b486f9cd9160dfc9ed69f"
           target="_blank"
         >
-          here
+          HERE
         </a>{" "}
         and contact me directly at michelleytlock@gmail.com!
       </h3>

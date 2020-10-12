@@ -67,19 +67,19 @@ const Home = () => {
         <div className="home__projects">
           <h2>Selected Works</h2>
           <ProjectFeature
-            url="/projects/history-hunt"
+            url="/historyHunt"
             img="https://res.cloudinary.com/michelleytlock/image/upload/v1597742964/portfolio/Mockup_hh_vj6bkp.png"
             title="History Hunt"
             description="A mobile application for the urban explorer, embarking on scavenger hunts for historical locations in their cities."
           />
           <ProjectFeature
-            url="/projects/verbadisco"
+            url="/verbadisco"
             img="https://res.cloudinary.com/michelleytlock/image/upload/v1597663107/Frame_1_rxpxen.png"
             title="Verbadisco"
             description="A mobile application for the ultimate Harry Potter fan to easily re-learn HP trivia."
           />
           <ProjectFeature
-            url="/projects/mediabox"
+            url="/mediabox"
             img="https://res.cloudinary.com/michelleytlock/image/upload/v1597761723/portfolio/Mediabox-mockup_dm576p.png"
             title="MediaBox"
             description="An application that gives users recommendations on what to watch based on their movie/tv show preferences."

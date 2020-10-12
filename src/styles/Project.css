@@ -1,49 +1,128 @@
 .project {
-  margin: 15px;
-  position: relative;
+  margin: 0;
 }
 
-.project__image {
-  border-radius: 15px;
-  z-index: 0;
+.project__content {
+  padding-top: 75px;
+  padding-bottom: 100px;
   width: 100%;
-  max-height: 450px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.project__mainImage {
+  width: 100%;
+  height: 400px;
+  margin: 75px 0 0 0;
   object-fit: cover;
 }
 
-.project__overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: white;
+.project__intro {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
-.project__text {
-  position: absolute;
-  left: 1.75rem;
-  bottom: 1.75rem;
-  z-index: 1;
-  text-decoration: none;
-  color: black;
+.project__left {
+  margin-right: 20px;
+  flex: 0.8;
 }
 
-.project:hover .project__overlay {
-  opacity: 0.8;
+.project__left > h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.project__left > h4 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  color: rebeccapurple;
+}
+
+.project__right {
+  flex: 0.2;
+  margin-left: 30px;
+}
+
+.project__prototypeButton {
+  background-color: rebeccapurple;
+  border-radius: 20px;
+  min-height: 30px;
+  padding: 10px 30px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: white;
+  font-size: 16px;
   cursor: pointer;
+  transition: 0.5s;
 }
 
-.project__text > h3 {
-   font-size: 36px;
-   font-weight: 600;
+.project__prototypeButton:hover {
+  background-color: black;
 }
 
-.project__text > h5 {
-font-size: 20px;
-font-weight: 500;
+.project__prototypeButton:focus {
+  outline: none;
+}
+
+.project__details {
+  margin: 50px 0;
+  display: flex;
+}
+
+.project__detail {
+  padding: 8px 20px;
+  border-left: 2px solid rebeccapurple;
+}
+
+.project__last {
+  border-right: 2px solid rebeccapurple;
+}
+
+.project__detail > h5 {
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 5px;
+  color: rebeccapurple;
+}
+
+.project__detail > h6 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+/*  */
+.project__row {
+  display: flex;
+}
+
+.project__row > .project__block {
+  margin-right: 30px;
+}
+
+.project__block {
+   margin-bottom: 30px;
+   line-height: 25px;
+   flex: 0.5;
+ }
+
+.project__block > h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: rebeccapurple;
+  margin-bottom: 15px;
+}
+
+.project__block > p {
+  margin-bottom: 10px;
+}
+
+.project__block > img {
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  object-fit: cover;
 }

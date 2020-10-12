@@ -8,7 +8,7 @@ function ExperiencePosition({ name, location, position, date, details }) {
     <div className="experiencePosition">
       <h5>
         <b>{name}</b>
-        <LocationOnIcon style={{ marginLeft: "5px", marginRight: "5px", fontSize: 16 }} />
+        <LocationOnIcon style={{ color: "rebeccapurple", marginLeft: "5px", marginRight: "5px", fontSize: 16 }} />
         {location}
       </h5>
       <h6>

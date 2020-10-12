@@ -1,12 +1,12 @@
 import React from "react"
-import "../styles/projects.css";
+import "../styles/projects.css"
 
 //Components
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import Head from "../components/Head"
-import Project from "../components/Project"
-import Alert from "../components/Alert";
+import ProjectTile from "../components/ProjectTile"
+import Alert from "../components/Alert"
 
 const Projects = () => {
   return (
@@ -17,15 +17,15 @@ const Projects = () => {
       <div className="projects__content">
         <div className="projects__row">
           <div className="projects__columnNarrow">
-            <Project
-              url="/projects/verbadisco"
+            <ProjectTile
+              url="/verbadisco"
               img="https://res.cloudinary.com/michelleytlock/image/upload/v1597663106/Frame_2_cs6a6q.png"
               title="Verbadisco"
               tag="UX/UI DESIGN"
             />
 
-            <Project
-              url="/projects/fitted"
+            <ProjectTile
+              url="/fitted"
               img="https://res.cloudinary.com/michelleytlock/image/upload/v1597730261/Multi-Devices-Mockup-Scene-Vol01_fyfdii.png"
               title="Fitted"
               tag="UI DESIGN"
@@ -33,8 +33,8 @@ const Projects = () => {
           </div>
 
           <div className="projects__columnWide">
-            <Project
-              url="/projects/history-hunt"
+            <ProjectTile
+              url="/historyHunt"
               img="https://res.cloudinary.com/michelleytlock/image/upload/v1597742964/portfolio/Mockup_hh_vj6bkp.png"
               title="History Hunt"
               tag="UX/UI DESIGN"
@@ -44,19 +44,19 @@ const Projects = () => {
 
         <div className="projects__row">
           <div className="projects__column">
-            <Project
+            <ProjectTile
               url="https://github.com/michelleytlock/amazon-clone"
               img="https://images-na.ssl-images-amazon.com/images/G/01/gc/designs/livepreview/amazon_dkblue_noto_email_v2016_us-main._CB468775337_.png"
-              title="Amazon Clone"
+              title="Amazon Clone (Work in Progress)"
               tag="WEB DEVELOPMENT"
             />
           </div>
 
           <div className="projects__column">
-            <Project
+            <ProjectTile
               url="https://github.com/michelleytlock/spotify-clone"
               img="https://b8g9x2x5.rocketcdn.me/wp-content/uploads/2018/08/spotify-logo-1920x1080_fouoik.jpg"
-              title="Spotify Clone"
+              title="Spotify Clone (Work in Progress)"
               tag="WEB DEVELOPMENT"
             />
           </div>
@@ -64,23 +64,23 @@ const Projects = () => {
 
         <div className="projects__row">
           <div className="projects__columnWide">
-            <Project
-              url="/projects/mediabox"
+            <ProjectTile
+              url="/mediabox"
               img="https://res.cloudinary.com/michelleytlock/image/upload/v1597761723/portfolio/Mediabox-mockup_dm576p.png"
               title="MediaBox"
               tag="WEB DEVELOPMENT"
             />
           </div>
           <div className="projects__columnNarrow">
-            <Project
-              url="/projects/aisle1"
-              img="https://res.cloudinary.com/michelleytlock/image/upload/v1597760104/portfolio/iMac_h5hjxi.png"
-              title="Aisle 1"
-              tag="WEB DEVELOPMENT"
+            <ProjectTile
+              url="/topixmedialab"
+              img="https://res.cloudinary.com/michelleytlock/image/upload/v1597840455/portfolio/001_cov1_us_beuuhg.png"
+              title="Topix Media Lab"
+              tag="EDITORIAL"
             />
 
-            <Project
-              url="/projects/gigzilla"
+            <ProjectTile
+              url="/gigzilla"
               img="https://res.cloudinary.com/michelleytlock/image/upload/v1597762172/portfolio/Gigzilla-mockup_xp60og.png"
               title="Gigzilla"
               tag="WEB DEVELOPMENT"
@@ -90,16 +90,16 @@ const Projects = () => {
 
         <div className="projects__row">
           <div className="projects__column">
-            <Project
-              url="/projects/topixmedialab"
-              img="https://res.cloudinary.com/michelleytlock/image/upload/v1597840455/portfolio/001_cov1_us_beuuhg.png"
-              title="Topix Media Lab"
-              tag="EDITORIAL"
+            <ProjectTile
+              url="/projects/aisle1"
+              img="https://res.cloudinary.com/michelleytlock/image/upload/v1597760104/portfolio/iMac_h5hjxi.png"
+              title="Aisle 1"
+              tag="WEB DEVELOPMENT"
             />
           </div>
 
           <div className="projects__column">
-            <Project
+            <ProjectTile
               url="/projects/edipresse"
               img="https://res.cloudinary.com/michelleytlock/image/upload/v1597831011/portfolio/IMG_7835color_rzucdp.png"
               title="Hong Kong Tatler Weddings"
