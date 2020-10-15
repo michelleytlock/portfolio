@@ -32,7 +32,7 @@ const About = () => {
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://drive.google.com/file/d/1BwhxBcIfDLWb89ZqIxUvPxjwrzEMVWK6/view?usp=sharing"
+            href="https://drive.google.com/file/d/1gGYCw9AOcEqV5GcHtXFe0tCe68xG9Cn4/view"
             className="about__resume"
           >
             Download Resume
