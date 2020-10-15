@@ -16,8 +16,13 @@ const Contact = () => {
         <Alert />
         <Navbar />
         <div className="contact__content">
-          <h2>Contact Me <Emoji label="woman technologist" symbol="👩🏻‍💻" /></h2>
-          <h3>Want to work together or grab a coffee?</h3>
+          <h2>
+            Contact Me <Emoji label="woman technologist" symbol="👩🏻‍💻" />
+          </h2>
+          <h3>
+            Want to work together or grab a coffee? <br />Shoot me a message. Or email
+            me at <span>michelleytlock@gmail.com</span>
+          </h3>
           <form
             name="Contact Form"
             method="POST"

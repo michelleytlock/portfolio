@@ -25,7 +25,10 @@ const About = () => {
           data-sal-delay="100"
           data-sal-easing="ease-out-bounce"
         >
-          <h1>I am a UX designer currently based in Hong Kong.</h1>
+          <h1>
+            I am a UX/UI designer currently based in Hong Kong{" "}
+            <Emoji label="hong kong flag" symbol="🇭🇰" />
+          </h1>
           <a
             target="_blank"
             rel="noreferrer"
@@ -38,8 +41,20 @@ const About = () => {
 
         <div className="about__michelle">
           <div className="about__michelleText">
-            <h2>Hi I'm Michelle.</h2>
-            <h4>My dreams are:</h4>
+            <h2>Hi I'm Michelle!</h2>
+            <h4>My goals are:</h4>
+            <div className="about__michelleBullet">
+              <StarIcon
+                style={{
+                  color: "rebeccapurple",
+                  marginTop: "5px",
+                  marginRight: "10px",
+                  fontSize: 16,
+                }}
+              />
+              <h6>To design experiences that tell stories.</h6>
+            </div>
+
             <div className="about__michelleBullet">
               <StarIcon
                 style={{
@@ -50,9 +65,7 @@ const About = () => {
                 }}
               />
               <h6>
-                To be a designer in an agency-like environment where I can work
-                on challenging projects that involve creativity and problem
-                solving.
+                To always be creative and encourage creativity around me.
               </h6>
             </div>
 
@@ -66,22 +79,10 @@ const About = () => {
                 }}
               />
               <h6>
-                To achieve goals every day working in a team that respects and
-                inspires each other while also learning from each other.
+                To be part of a team and culture that inspire each other while learning from each other.
               </h6>
             </div>
 
-            <div className="about__michelleBullet">
-              <StarIcon
-                style={{
-                  color: "rebeccapurple",
-                  marginTop: "5px",
-                  marginRight: "10px",
-                  fontSize: 16,
-                }}
-              />
-              <h6>To be friends with Béyonce.</h6>
-            </div>
           </div>
 
           <img
@@ -94,7 +95,7 @@ const About = () => {
         <Experience />
 
         {/* Tools I use */}
-        <div className="about__tools">
+        {/* <div className="about__tools">
           <h3>Tools I Use</h3>
           <div className="about__toolsColumns">
             <div className="about__toolsColumn">
@@ -129,10 +130,6 @@ const About = () => {
               <Tool
                 name="Balsamiq"
                 src="https://res.cloudinary.com/michelleytlock/image/upload/v1597411049/balsamiq_logo_lgygl1.png"
-              />
-              <Tool
-                name="Whimsical"
-                src="https://res.cloudinary.com/michelleytlock/image/upload/v1597411049/whimsical_logo_a5ibs4.png"
               />
             </div>
 
@@ -194,7 +191,7 @@ const About = () => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* More About Me */}
         <div className="about__more">
@@ -202,7 +199,7 @@ const About = () => {
           <div className="about__moreItems">
             <div className="about__moreItem">
               <h5>
-                <Emoji label="hong kong flag" symbol="🇭🇰" /> Currently:
+                <Emoji label="hong kong flag" symbol="🇭🇰" /> Current Location:
               </h5>
               <p>
                 I live in Hong Kong. Other cities I've lived in are Shanghai
@@ -232,9 +229,7 @@ const About = () => {
                 <Emoji label="plane" symbol="✈️" /> Travel:
               </h5>
               <p>
-                I love to travel. I've been to 18 countries and counting! I love
-                exploring new places, learning about cultures and eating
-                different cuisines.
+                I've been to 18 countries. I love learning about different cultures and experiencing new cuisines.
               </p>
               <img
                 src="https://res.cloudinary.com/michelleytlock/image/upload/v1597827584/portfolio/Screen_Shot_2020-08-19_at_4.59.20_PM_eyuncg.png"
@@ -280,8 +275,7 @@ const About = () => {
                 <Emoji label="books" symbol="📚" /> Reading:
               </h5>
               <p>
-                I'm trying to read 100 books this year. I already know I'm not
-                going to make it, but it's fun seeing how close I get! I love
+                I'm trying to read 100 books this year. I love
                 reading fiction, biographies and the occasional mystery.{" "}
                 <a
                   href="https://images-na.ssl-images-amazon.com/images/I/819JSdLa3OL.jpg"
@@ -295,10 +289,10 @@ const About = () => {
 
             <div className="about__moreItem">
               <h5>
-                <Emoji label="fish" symbol="🐟" /> Office:
+                <Emoji label="fish" symbol="🐟" /> Office Rep:
               </h5>
               <p>
-                I am usually the office snack lady. When I lived in New York, I
+                I am usually the office snack lady. I
                 bought{" "}
                 <a
                   href="https://images.costco-static.com/ImageDelivery/imageService?profileId=12026539&itemId=339054-894&recipeName=680&viewId=1"
@@ -307,7 +301,7 @@ const About = () => {
                 >
                   Costco-sized goldfish only
                 </a>
-                , never regular-size. As a result, I had a lot of goldfish to
+                , never regular-size. So I had a lot of goldfish to
                 share.
               </p>
             </div>
@@ -318,11 +312,10 @@ const About = () => {
                 Restaurants:
               </h5>
               <p>
-                I am the go-to restaurant recommender in all of my friend
-                groups. I am known to obsessively (meticulously) "star"{" "}
-                <Emoji label="star" symbol="⭐" /> restaurants on my Google
-                Maps. I'm still working on my Hong Kong Google Map but if you
-                want to see my New York one:{" "}
+                I am the go-to restaurant recommender among my friends. I am known to obsessively <i>(meticulously)</i> star{" "}
+                <Emoji label="star" symbol="⭐" /> {" "}restaurants on my Google
+                Maps. I'm still working on my HK Google Map but if you
+                want to see my NY one:{" "}
                 <a
                   href="https://drive.google.com/file/d/1Qx4bQ0eprtITnBM24EGe-kpFUjfR5Ujd/view?usp=sharing"
                   target="_blank"
@@ -339,7 +332,7 @@ const About = () => {
                 <Emoji label="laptop" symbol="💻" /> TV Shows:
               </h5>
               <p>
-                I watch too much TV but my all-time favorite television show is{" "}
+                I watch a lot of TV but my all-time favorite television show is{" "}
                 <a
                   href="https://www.imdb.com/title/tt0200276/"
                   target="_blank"
@@ -354,16 +347,7 @@ const About = () => {
                   rel="noreferrer"
                 >
                   The Great British Bake Off
-                </a>{" "}
-                and{" "}
-                <a
-                  href="https://en.wikipedia.org/wiki/Guy%27s_Grocery_Games"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Guy's Grocery Games
-                </a>
-                .
+                </a>.
               </p>
               <iframe
                 src="https://www.youtube.com/embed/VEaxho5kG04"
@@ -379,8 +363,7 @@ const About = () => {
               </h5>
 
               <p>
-                I love going to concerts and listening to music. I mainly listen
-                to pop, indie pop and R&B.
+                I love going to concerts and listening to music. My favorite artists are BTS and Beyoncé.
               </p>
               <iframe
                 src="https://open.spotify.com/embed/playlist/0aFuEhx18Wv4lTlOKWkdqv"

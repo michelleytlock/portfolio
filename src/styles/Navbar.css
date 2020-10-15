@@ -29,6 +29,16 @@
   transition: transform 0.5s;
 }
 
+.navbar__menuItemActive {
+  color: rebeccapurple;
+  font-weight: 700;
+  transition: transform 0.5s;
+}
+
+.navbar__menuItemActive:hover {
+  transform: scale(1.1);
+}
+
 .navbar__menuItem:hover {
   color: rebeccapurple;
   transform: scale(1.1);

@@ -65,7 +65,7 @@ const Projects = () => {
         <div className="projects__row">
           <div className="projects__columnWide">
             <ProjectTile
-              url="/mediabox"
+              url="/mediaBox"
               img="https://res.cloudinary.com/michelleytlock/image/upload/v1597761723/portfolio/Mediabox-mockup_dm576p.png"
               title="MediaBox"
               tag="WEB DEVELOPMENT"
@@ -73,10 +73,10 @@ const Projects = () => {
           </div>
           <div className="projects__columnNarrow">
             <ProjectTile
-              url="/topixmedialab"
+              url="/topix"
               img="https://res.cloudinary.com/michelleytlock/image/upload/v1597840455/portfolio/001_cov1_us_beuuhg.png"
               title="Topix Media Lab"
-              tag="EDITORIAL"
+              tag="EDITORIAL DESIGN + ART DIRECTION"
             />
 
             <ProjectTile
@@ -91,7 +91,7 @@ const Projects = () => {
         <div className="projects__row">
           <div className="projects__column">
             <ProjectTile
-              url="/projects/aisle1"
+              url="/aisle1"
               img="https://res.cloudinary.com/michelleytlock/image/upload/v1597760104/portfolio/iMac_h5hjxi.png"
               title="Aisle 1"
               tag="WEB DEVELOPMENT"
@@ -100,10 +100,10 @@ const Projects = () => {
 
           <div className="projects__column">
             <ProjectTile
-              url="/projects/edipresse"
+              url="/edipresse"
               img="https://res.cloudinary.com/michelleytlock/image/upload/v1597831011/portfolio/IMG_7835color_rzucdp.png"
               title="Hong Kong Tatler Weddings"
-              tag="EDITORIAL"
+              tag="EDITORIAL DESIGN"
             />
           </div>
         </div>

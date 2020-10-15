@@ -8,6 +8,7 @@ import Footer from "./Footer"
 import Next from "./Next"
 import Head from "./Head"
 import Alert from "./Alert"
+import SideNav from "./SideNav"
 
 const Project = ({
   title,
@@ -52,19 +53,21 @@ const Project = ({
       <img className="project__mainImage" src={mainImage} alt={title} />
 
       <div className="project__content">
-        <div className="project__intro">
+        <SideNav />
+
+        <div className="project__contentMain"><div className="project__intro">
           <div className="project__left">
             <h2>{title}</h2>
             <h4>{summary}</h4>
           </div>
           <div className="project__right">
-            <a
+            {!link ? "" : <a
               href={link}
               target="_blank"
               rel="noreferrer"
             >
               <button className="project__prototypeButton">See Prototype</button>
-            </a>
+            </a>}
           </div>
         </div>
 
@@ -97,7 +100,8 @@ const Project = ({
 
         {children}
 
-        {/* <Next next={randomNext} /> */}
+        {/* <Next next={randomNext} /> */}</div>
+        
       </div>
 
       <Footer />

@@ -21,15 +21,16 @@ export default function Experience() {
           <h6>
             <b>Assistant Art Director</b> March ’18 - May ’19
           </h6>
-          <ExperienceBullet content="Helped plan and create company's first book designs (including covers and interiors), leading to a slate of adult and children's books every season, every year" />
+          <ExperienceBullet content="Planned and created company's first book designs (including covers and interiors), leading to a slate of adult and children's books every season, every year" />
           <h6>
             <b>Senior Graphic Designer</b> October ’16 - March ’18
           </h6>
-          <ExperienceBullet content="Improved company's book and magazine sales by researching cover trends in collaboration with business department, resulting in more profitable products" />
+          <ExperienceBullet content="Improved company's book and magazine sales by researching cover trends in collaboration with business department" />
+          <ExperienceBullet content="Enhanced storytelling in publications with designs that contributed to content" />
           <h6>
             <b>Graphic Designer</b> June ’15 - October ’16
           </h6>
-          <ExperienceBullet content="Led the design of several magazine projects simultaneously by creating templates to guide overall typography, color and style, assisting the Creative Director" />
+          <ExperienceBullet content="Led the design of several magazines simultaneously by creating templates to guide overall typography, color and style" />
         </div>
 
         <ExperiencePosition
@@ -38,22 +39,22 @@ export default function Experience() {
           position="Design Director"
           date="August ’13 - May ’15"
           details={[
-            "Led the design of two 480-page yearbooks, resulting in awards for the university",
+            "Art directed and led design of two 480-page yearbooks, resulting in awards for the university",
           ]}
         />
       </div>
 
       <div className="experience__education">
-        <h3>Education</h3>
+        <h3>Educational Experience</h3>
         <ExperiencePosition
           name="Ironhack"
           location="Remote"
           position="Full-Stack Web Developer Bootcamp"
           date="July ’20"
           details={[
-            "This was a 9-week full-time web development bootcamp",
-            "I designed and built full-stack Javascript web applications",
-            "I learned the fundamentals of programming and best practices, as well as how to think like a programmer and how to deconstruct complex problems",
+            "9-week full-time web development bootcamp",
+            "Designed and coded full-stack Javascript web applications",
+            "Learned how to think like a programmer and how to deconstruct complex problems",
           ]}
         />
 
@@ -63,8 +64,8 @@ export default function Experience() {
           position="UX/UI Design"
           date="January ’20"
           details={[
-            "I cultivated my user-centered problem-solving design abilities and learned how to makes products and services more accessible and intuitive",
-            "This intensive, project-based course focused on research, information architecture, wireframing, prototyping and usability testing",
+            "Cultivated user-centered problem-solving design abilities and learned how to makes products and services more accessible and intuitive",
+            "Focused on research, information architecture, wireframing, prototyping and usability testing",
           ]}
         />
 
